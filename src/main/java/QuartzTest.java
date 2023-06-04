@@ -4,7 +4,7 @@ import org.quartz.impl.StdSchedulerFactory;
 /**
  * @author Robbin Drent <r.v.drent@st.hanze.nl>
  * <p>
- * Dit is wat het programma doet.
+ * Test met de Quartz Scheduler.
  */
 public class QuartzTest {
 
