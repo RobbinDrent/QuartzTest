@@ -14,8 +14,12 @@ public class SimpleJob implements Job {
         JobDataMap dataMap = jobExecutionContext.getJobDetail().getJobDataMap();
 
         String jobSays = dataMap.getString("jobSays");
-        float myFloatValue = dataMap.getFloat("myFloatValue");
+        int seconden = dataMap.getInt("seconden");
 
-        System.out.println("Job says: " + jobSays + ", and val is: " + myFloatValue);
+        if (seconden != 1 ) {
+            System.out.println("Deze tekst verschijnt elke " + seconden + " seconden");
+        } else if (seconden == 1) {
+            System.out.println("Deze tekst verschijnt elke seconde!");
+        }
     }
 }
